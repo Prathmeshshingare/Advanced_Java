@@ -28,8 +28,8 @@ public class RetriveData {
 		prp=conn.prepareStatement(qry);
 		rs=prp.executeQuery();
 		while(rs.next()) {
-			System.out.println(rs.getInt(1));
-			System.out.println(rs.getString(2));
+			System.out.println("Id of Student is: "+rs.getInt(1));
+			System.out.println("Name of Student is: "+rs.getString(2));
 		}
 		}
 		catch (SQLException e) {
