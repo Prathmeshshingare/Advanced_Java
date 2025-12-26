@@ -26,7 +26,7 @@ public class BulkOperation {
 			st.addBatch("insert into students values(03,'css')");
 			st.addBatch("insert into students values(04,'css3')");
 			st.executeBatch();
-			System.out.println("Done");
+			System.out.println("Bulk Operations are Done");
 			
 			
 		} catch (SQLException e) {
