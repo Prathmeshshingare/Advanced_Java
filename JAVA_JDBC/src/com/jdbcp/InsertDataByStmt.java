@@ -22,7 +22,7 @@ public class InsertDataByStmt {
 		st=conn.createStatement();
 		int row=st.executeUpdate(qry);
 		if(row > 0) {
-			System.out.println("Data Inserted ");
+			System.out.println("Data Inserted  by statement");
 		}
 		}
 		catch (Exception e) {
