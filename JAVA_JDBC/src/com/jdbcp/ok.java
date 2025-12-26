@@ -26,7 +26,7 @@ public class ok {
 			prp.setString(2, "vikas");
 			int row = prp.executeUpdate();
 			if (row > 0) {
-				System.out.println("data entered ");
+				System.out.println("d");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
