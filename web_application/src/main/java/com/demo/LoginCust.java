@@ -46,10 +46,20 @@ public class LoginCust extends HttpServlet {
 		ds.setServerName("localhost");
 		ds.setDatabaseName("db_j2ee");
 		try {
-			 String qry="select * from customer where id=? and name=?";
+			 String qry="insert into students values(?,?)";
 			conn=ds.getConnection();
 			prp=conn.prepareStatement(qry);
-			
+			prp.setString(1,user);
+			prp.setString(2,pwd);
+			int row=prp.executeUpdate();
+			if(row > 0) {
+				
+				response.sendRedirect("Welcome.html");
+				out.print("Done");
+			}
+			else {
+				out.print("failed");
+			}
 		}
 	}
 
