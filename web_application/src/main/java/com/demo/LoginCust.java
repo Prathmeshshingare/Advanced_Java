@@ -58,9 +58,15 @@ public class LoginCust extends HttpServlet {
 				out.print("Done");
 			}
 			else {
-				out.print("failed");
+				out.print("Not passs");
 			}
 		}
+		catch (Exception e) {
+			// TODO: handle exception
+			
+			e.printStackTrace();
+		}
+		
 	}
 
 	/**
