@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="skyblue" text="black">
-
+<body bgcolor="pink" text="black">
+<h2>Plz Fill Your Correct Details </h2>
  <form action="BeanStore.jsp">
    
    <label>Your Mail ID</label>
